@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family:  'Prompt', sans-serif, serif;
+}
+
+h1, h2, h3 {
+    margin: 20px 0 15px 10px;
+}
+
+h3 {
+    min-width: 180px;
+    white-space: nowrap;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.eea.europa.eu/themes/biodiversity/state-of-nature-in-the-eu/state-of-nature-2020-subtopic/image_print);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+form {
+    width: 900px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0 solid;
+    box-shadow: 0 0 15px 5px rgb(0, 0, 0);
+}
+
+label {
+    display: flex;      
+    flex-wrap: wrap;    
+    align-items: center; 
+}
+
+input, select {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    height: 30px;
+    flex: 1 1 auto;
+}
+
+
+input:invalid {
+    border: 3px solid red;
+}
+
+input:valid {
+    background-color: rgb(176, 255, 176);
+    border: 3px solid green;
+}
+
+hr {
+    margin-top: 30px;
+    width: 95%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+button {
+    align-self: flex-end;
+    padding: 10px 0;
+    margin: 20px 0;
+    margin-right: 10px;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    width: 30%;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: white;
+    color: black;
+}
