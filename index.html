@@ -9,37 +9,35 @@
 </head>
 <body>
     <form action="#" method="GET">
-        <fieldset>
-            <h1>Contact form</h1>
-            <h2>Please fill your information down below.</h2>
-            <label>
-                <h3>Your name *</h3>
-                <input type="text" placeholder="Firstname" autofocus pattern="[A-Z][a-z]*" maxlength="15" required>
-                <input type="text" placeholder="Lastname" pattern="[A-Z][a-z]*" maxlength="20" required>
-            </label>
-            <label>
-                <h3>Your email *</h3>
-                <input type="email" placeholder="adress@mail.com" pattern="\w*@\w*.com" maxlength="30" required>
-            </label>
-            <label>
-                <h3>Phone number *</h3>
-                <input type="tel" placeholder="+380 00 00 00 000" pattern="\d*" maxlength="10" required>
-            </label>
-            <label>
-                <h3>Message subject *</h3>
-                <select>
-                    <option value="value1">Client support</option>
-                    <option value="value2">Issue report</option>
-                    <option value="value3">Other</option>
-                </select>
-            </label>
-            <label>
-                <h3>Message *</h3>
-                <input type="text" required>
-            </label>
-            <hr>
-            <button type="submit">Submit</button>
-        </fieldset>
+        <h1>Contact form</h1>
+        <h2>Please fill your information down below.</h2>
+        <label>
+            <span>Your name *</span>
+            <input type="text" placeholder="Firstname" autofocus pattern="[A-Z][a-z]*" maxlength="15" required>
+            <input type="text" placeholder="Lastname" pattern="[A-Z][a-z]*" maxlength="20" required>
+        </label>
+        <label>
+            <span>Your email *</span>
+            <input type="email" placeholder="adress@mail.com" pattern="^\w*@\w*\.com$" maxlength="30" required>
+        </label>
+        <label>
+            <span>Phone number *</span>
+            <input type="tel" placeholder="000-00-00-000" pattern="\d*" maxlength="10" required>
+        </label>
+        <label>
+            <span>Message subject *</span>
+            <select>
+                <option value="value1">Client support</option>
+                <option value="value2">Issue report</option>
+                <option value="value3">Other</option>
+            </select>
+        </label>
+        <label>
+            <span>Message *</span>
+            <input type="text" required>
+        </label>
+        <hr>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>

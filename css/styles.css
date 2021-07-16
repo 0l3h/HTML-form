@@ -5,12 +5,14 @@
     font-family:  'Prompt', sans-serif, serif;
 }
 
-h1, h2, h3 {
+h1, h2, span {
     margin: 20px 0 15px 10px;
 }
 
-h3 {
+span {
     min-width: 180px;
+    font-size: larger;
+    font-weight: 600;
     white-space: nowrap;
 }
 
@@ -28,13 +30,12 @@ body {
 
 form {
     width: 900px;
-}
-
-fieldset {
     display: flex;
     flex-direction: column;
     border: 0 solid;
     box-shadow: 0 0 15px 5px rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 label {
@@ -50,7 +51,6 @@ input, select {
     height: 30px;
     flex: 1 1 auto;
 }
-
 
 input:invalid {
     border: 3px solid red;
